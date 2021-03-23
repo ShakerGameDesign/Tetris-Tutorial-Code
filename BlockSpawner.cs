@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockSpawner : MonoBehaviour
+public class BlockSpawner : MonoBehaviour                       //"BlockSpawner" MUST match the name of the script you created for the spawner 'empty' for the code to work!
 {
     public GameObject[] Tetrominoes;
     
@@ -16,4 +16,3 @@ public class BlockSpawner : MonoBehaviour
         Instantiate(Tetrominoes[Random.Range(0, Tetrominoes.Length)], transform.position, Quaternion.identity);
     }
 }
-
