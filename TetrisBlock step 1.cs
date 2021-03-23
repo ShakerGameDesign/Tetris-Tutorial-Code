@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TetrisBlock : MonoBehaviour 
+public class TetrisBlock : MonoBehaviour                        //"Tetris Block" MUST be renamed to whatever your script is called for the code to work!
 {
     //Start is called before the first frame update
     void start()
