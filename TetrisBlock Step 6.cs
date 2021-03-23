@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TetrisBlock : MonoBehaviour 
+public class TetrisBlock : MonoBehaviour                                //"TetrisBlock" MUST be renamed to whatever your script is called for the code to work! 
 {
     public Vector3 rotationPoint;
     private float previousTime;
@@ -33,10 +33,10 @@ public class TetrisBlock : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            //rotate !
-            transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0,0,1), 90);
+            //Rotation
+            transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0,0,1), -90);           //You may need to make this -90
             if (!ValidMove())
-                transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), -90);
+                transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), 90);      //And this (+)90
         }
 
 
