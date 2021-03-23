@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TetrisBlock : MonoBehaviour 
+public class TetrisBlock : MonoBehaviour                                //"TetrisBlock" MUST be renamed to whatever your script is called for the code to work!
 {
     private float previousTime;
     public float fallTime = 0.8f;
